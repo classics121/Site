@@ -1,0 +1,143 @@
+/*
+COLOUR PALETTE
+
+black    #000000
+Yellow  #f5cf54
+Green   #9CC05D
+*/
+
+
+/* UNIVERSAL STYLES */
+span{
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'BlinkMacSystemFont', 'Roboto', 'Lucida Sans';
+	background-color: #ededed;
+}
+
+.header1{
+height: 5rem;
+padding: 1.5vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+header{
+	position: sticky;
+	top: 0;
+	
+}
+
+.now1::before{
+content: '';
+background-color: #ffffff;
+position:absolute;
+height: 0%;
+width: 100%;
+transform: scale(0);
+z-index: -1;
+box-shadow: none;
+transition-property:height ,box-shadow; 
+
+
+}
+
+.now1:hover::before{
+	transform: scale(1);
+	height: 100%;
+	transition-duration: 0.6s;
+	box-shadow:0px 0.5px 0px 0px rgba(185, 185, 185, 0.849)  ;
+}
+.now1::after{
+	content: '';
+	background-color: #ffffff;
+	
+}
+
+
+.Erics-Logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	
+	
+}
+.logo{
+width: 9vw;
+filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(257deg) brightness(100%) contrast(104%);
+
+}
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: transparent;
+	
+	
+}
+
+nav ul li{
+padding: 0.5em;
+text-decoration: none;
+display: flex;
+transition-property: font-size;
+transition-duration: 0.5s;
+transform: scale(0.8);
+align-items: center;
+box-sizing: border-box;
+}
+
+nav ul li:hover{
+	font-size: 1.2em;
+	transform: scale(1.2);
+}
+
+button{
+	background-color: transparent;
+	border: none;
+}
+/* CONTENT AREA */
+.Divbox1{
+	display: flex;
+	margin-top: 1em;
+	
+}
+.Divbox1 div{
+	flex-wrap: wrap;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+	padding: 1em;
+	height: 50%;
+}
+.Picture1 img{
+	height: 25%;
+}
+
+.hi{
+	height: 20rem;
+}
+
+.div6{
+background-color: hsl(0deg 0% 87.06%);
+
+
+
+}
+
+footer{
+	background-color: #ffffff;
+	height: 5em;
+	box-sizing: border-box;
+}
+/* LARGER VIEWS */
+@media only screen and (min-width: 950px){
+
+
+}
